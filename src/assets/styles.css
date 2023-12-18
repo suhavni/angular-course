@@ -37,22 +37,30 @@ button {
   border-radius: 4px;
 }
 
-course-card.is-first {
-  border-top: 2px solid grey;
-  padding-top: 20px;
+course-card.is-even .course-card {
+  background: lightgray;
+}
+
+course-card.is-odd .course-card {
+  background: lightcyan;
 }
 
 course-card.is-last {
   border-bottom: 2px solid grey;
   padding-top: 20px;
+
+  .course-card {
+    background-color: moccasin;
+  }
 }
 
-course-card.is-even {
-  background: lightgray;
-}
-
-course-card.is-odd {
-  background: lightcyan;
+course-card.is-first {
+  border-top: 2px solid grey;
+  padding-top: 20px;
+  
+  .course-card {
+    background-color: moccasin;
+  }
 }
 
 .course-category {
